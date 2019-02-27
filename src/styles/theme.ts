@@ -20,11 +20,11 @@ export const theme: Theme = {
   breakpointMd: '1080px',
   breakpointSm: '640px',
   breakpointXs: '400px',
-  backgroundColor: '#fff',
-  linkColor: '#a212d1',
-  breakpointColor: '#fff',
-  textColor: '#000',
-  codeColor: '#3914b3',
+  backgroundColor: '255,255,255',
+  linkColor: '162, 18, 209',
+  breakpointColor: '255, 255, 255',
+  textColor: '0, 0, 0',
+  codeColor: '57, 20, 179',
 }
 
 export const GlobalStyle = createGlobalStyle`
