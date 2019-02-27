@@ -1,9 +1,9 @@
 import React from 'react'
 import {Link, graphql} from 'gatsby'
 
-import Bio from '../components/bio'
 import Layout from '../components/layout'
 import Head from '../components/head'
+import Banner from '../components/banner'
 
 interface Props {
   readonly data: PageQueryData
@@ -19,13 +19,7 @@ export default class Index extends React.Component<Props> {
       <Layout title={siteTitle}>
         <Head title="All posts" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
         <article>
-          <header>
-            <h1>{siteTitle}</h1>
-            <h2 />
-            <small>
-              <Bio />
-            </small>
-          </header>
+          <Banner />
           <div className={`page-content`}>
             {posts.map(({node}) => {
               const title = node.frontmatter.title || node.fields.slug

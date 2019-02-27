@@ -2,11 +2,6 @@ import {Theme} from './theme'
 
 export default (theme: Theme) => `
 // Curtana for Almace Scaffolding | © Tunghsiao Liu | MIT
-//
-
-//
-// Variables
-// -----------------------------------------------------------------------------
 
 :root {
   // Typography
@@ -183,6 +178,7 @@ del {
   li {
     display: inline-block;
     line-height: 2;
+    vertical-align: top;
 
     a {
       padding: .5em var(--nav-item-space);

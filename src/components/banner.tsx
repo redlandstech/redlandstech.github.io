@@ -1,13 +1,13 @@
 import React from 'react'
-import banner from '../../static/banner.png'
+import * as banner from '../../static/banner.png'
 import {styled} from '../styles/theme'
 
-const StyledBanner = styled('div')`
-  background-image: url(${banner});
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  min-height: 100vh;
+const StyledBanner = styled('header')`
+  background-image: url(${banner}) !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  min-height: 80vh !important;
 `
 
 export default function() {

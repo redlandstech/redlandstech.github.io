@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import {GlobalStyle} from '../styles/theme'
+import * as logo from '../../static/logo-purple.png'
 
 interface Props {
   readonly title: string
@@ -17,7 +18,9 @@ export default class Layout extends React.Component<Props> {
         <nav className="navigation">
           <ul>
             <li>
-              <Link to={`/`}>{title}</Link>
+              <Link to={`/`}>
+                <img src={logo} width={167} />
+              </Link>
             </li>
             <li>
               <Link to={`/tags`}>Tags</Link>
