@@ -3,6 +3,7 @@ import {Link, graphql} from 'gatsby'
 
 import Layout from '../components/layout'
 import Head from '../components/head'
+import Bio from '../components/bio'
 
 interface Props {
   readonly data: PageQueryData
@@ -24,18 +25,29 @@ export default class TagTemplate extends React.Component<Props> {
           title={`Posts tagged "${tag}"`}
           keywords={[`blog`, `gatsby`, `javascript`, `react`, tag]}
         />
-        {posts.map(({node}) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3>
-                <Link to={node.fields.slug}>{title}</Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{__html: node.excerpt}} />
-            </div>
-          )
-        })}
+        <article>
+          <header>
+            <h1>Posts tagged {tag}</h1>
+            <h2 />
+            <small>
+              <Bio />
+            </small>
+          </header>
+          <div className={`page-content`}>
+            {posts.map(({node}) => {
+              const title = node.frontmatter.title || node.fields.slug
+              return (
+                <div key={node.fields.slug}>
+                  <h3>
+                    <Link to={node.fields.slug}>{title}</Link>
+                  </h3>
+                  <small>{node.frontmatter.date}</small>
+                  <p dangerouslySetInnerHTML={{__html: node.excerpt}} />
+                </div>
+              )
+            })}
+          </div>
+        </article>
       </Layout>
     )
   }

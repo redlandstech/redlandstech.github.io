@@ -18,19 +18,29 @@ export default class Index extends React.Component<Props> {
     return (
       <Layout title={siteTitle}>
         <Head title="All posts" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
-        <Bio />
-        {posts.map(({node}) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3>
-                <Link to={node.fields.slug}>{title}</Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{__html: node.excerpt}} />
-            </div>
-          )
-        })}
+        <article>
+          <header>
+            <h1>{siteTitle}</h1>
+            <h2 />
+            <small>
+              <Bio />
+            </small>
+          </header>
+          <div className={`page-content`}>
+            {posts.map(({node}) => {
+              const title = node.frontmatter.title || node.fields.slug
+              return (
+                <div key={node.fields.slug}>
+                  <h3>
+                    <Link to={node.fields.slug}>{title}</Link>
+                  </h3>
+                  <small>{node.frontmatter.date}</small>
+                  <p dangerouslySetInnerHTML={{__html: node.excerpt}} />
+                </div>
+              )
+            })}
+          </div>
+        </article>
       </Layout>
     )
   }

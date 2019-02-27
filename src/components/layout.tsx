@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'gatsby'
+import {GlobalStyle} from '../styles/theme'
 
 interface Props {
   readonly title: string
@@ -11,19 +12,30 @@ export default class Layout extends React.Component<Props> {
     const {title, children} = this.props
 
     return (
-      <div>
-        <header>
-          <h1>
-            <Link to={`/`}>{title}</Link>
-          </h1>
-        </header>
-        <main>{children}</main>
-        <footer>
+      <>
+        <GlobalStyle />
+        <nav className="navigation">
+          <ul>
+            <li>
+              <Link to={`/`}>{title}</Link>
+            </li>
+            <li>
+              <Link to={`/tags`}>Tags</Link>
+            </li>
+            <li>
+              <Link to={`/about`}>About</Link>
+            </li>
+          </ul>
+        </nav>
+        <main className="content" role="main">
+          {children}
+        </main>
+        <footer className="footer">
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
-      </div>
+      </>
     )
   }
 }

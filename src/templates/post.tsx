@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link, graphql} from 'gatsby'
+import {styled} from '../styles/theme'
 
 import Bio from '../components/bio'
 import Layout from '../components/layout'
@@ -13,6 +14,15 @@ interface Props {
   }
 }
 
+const StyledUl = styled('ul')`
+  list-style-type: none;
+
+  li::before {
+    content: '' !important;
+    padding-right: 0 !important;
+  }
+`
+
 export default class PostTemplate extends React.Component<Props> {
   render() {
     const post = this.props.data.markdownRemark
@@ -22,27 +32,34 @@ export default class PostTemplate extends React.Component<Props> {
     return (
       <Layout title={siteTitle}>
         <Head title={post.frontmatter.title} description={post.excerpt} />
-        <h1>{post.frontmatter.title}</h1>
-        <p>{post.frontmatter.date}</p>
-        <div dangerouslySetInnerHTML={{__html: post.html}} />
-        <hr />
-        <Bio />
-        <ul>
-          {previous && (
-            <li>
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            </li>
-          )}
-          {next && (
-            <li>
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            </li>
-          )}
-        </ul>
+        <article>
+          <header>
+            <h1>{post.frontmatter.title}</h1>
+            <h2>{post.frontmatter.date}</h2>
+            <small>
+              <Bio />
+            </small>
+          </header>
+          <div className={`page-content`}>
+            <div dangerouslySetInnerHTML={{__html: post.html}} />
+            <StyledUl>
+              {previous && (
+                <li>
+                  <Link to={previous.fields.slug} rel="prev">
+                    ← {previous.frontmatter.title}
+                  </Link>
+                </li>
+              )}
+              {next && (
+                <li>
+                  <Link to={next.fields.slug} rel="next">
+                    {next.frontmatter.title} →
+                  </Link>
+                </li>
+              )}
+            </StyledUl>
+          </div>
+        </article>
       </Layout>
     )
   }

@@ -233,7 +233,8 @@ to be indented _twice_ -- 8 spaces or two tabs:
 
 - A list item with a code block:
 
-      <code goes here>
+
+    <code goes here>
 
 ### Code Blocks
 
