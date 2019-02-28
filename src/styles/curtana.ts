@@ -440,6 +440,10 @@ body:hover .latest {
     }
   }
 
+  header img {
+    --space-deco: none;
+  }
+
   img,
   video,
   iframe,

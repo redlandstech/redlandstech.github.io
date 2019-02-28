@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link, graphql} from 'gatsby'
 import {styled} from '../styles/theme'
+import Img from 'gatsby-image'
 
 import Bio from '../components/bio'
 import Layout from '../components/layout'
@@ -39,6 +40,9 @@ export default class PostTemplate extends React.Component<Props> {
             <small>
               <Bio />
             </small>
+            {post.frontmatter.featured && (
+              <Img sizes={post.frontmatter.featured.childImageSharp.sizes} />
+            )}
           </header>
           <div className={`page-content`}>
             <div dangerouslySetInnerHTML={{__html: post.html}} />
@@ -78,6 +82,7 @@ interface PageQueryData {
     frontmatter: {
       title: string
       date: string
+      featured: any
     }
   }
 }
@@ -96,6 +101,13 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        featured {
+          childImageSharp {
+            sizes(maxWidth: 1024) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
       }
     }
   }
