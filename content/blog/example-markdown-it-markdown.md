@@ -315,7 +315,7 @@ _single underscores_
 
 You might have images that are embedded:
 
-![Gatsby](../assets/gatsby-icon.png)
+![Hack night](../assets/Hack-Night-April-2018.png)
 
 ### Code
 
