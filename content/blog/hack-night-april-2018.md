@@ -9,3 +9,5 @@ featured: ../assets/Hack-Night-April-2018.png
 ---
 
 We bought 11 Furbies, grabbed some scissors and connected up soe bluetooth.
+
+![](../assets/Hack-Night-April-2018-2.png)

@@ -173,20 +173,26 @@ del {
   margin-left: calc(var(--nav-item-space) * -1);
   font-size: 90%;
   font-weight: bold;
-  // text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  list-style: none;
 
   li {
+    vertical-align: middle;
     display: inline-block;
-    line-height: 2;
-    vertical-align: top;
+    padding: 0.5em;
 
     a {
-      padding: .5em var(--nav-item-space);
+      display: block;
 
       &:hover,
       &:focus {
         color: var(--link-color);
         text-decoration: none;
+      }
+
+      img {
+        display: block;
       }
     }
   }

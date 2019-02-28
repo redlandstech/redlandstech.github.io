@@ -2,16 +2,17 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter',
-    description: 'This is a starter for a Gatsby blog with typescript and styled components',
-    siteUrl: 'https://jeffrafter.github.io/gatsby-starter-blog-typescript',
+    title: 'redlands.tech',
+    description:
+      'A collective of engineers, designers, entrepreneurs, students and creative hackers in Redlands, California',
+    siteUrl: 'https://redlands.tech',
     author: {
-      name: 'Jeff Rafter',
-      url: 'https://github.com/jeffrafter',
-      email: 'jeffrafter@gmail.com',
+      name: 'redlands.tech',
+      url: 'https://redlands.tech',
+      email: 'info@redlands.tech',
     },
     social: {
-      twitter: 'https://twitter.com/jeffrafter',
+      twitter: 'https://twitter.com/redlandstech',
     },
   },
   plugins: [

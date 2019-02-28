@@ -4,9 +4,7 @@ import {StaticQuery, graphql} from 'gatsby'
 type StaticQueryData = {
   site: {
     siteMetadata: {
-      author: {
-        name: string
-      }
+      description: string
       social: {
         twitter: string
       }
@@ -21,9 +19,7 @@ export default function() {
         query {
           site {
             siteMetadata {
-              author {
-                name
-              }
+              description
               social {
                 twitter
               }
@@ -32,14 +28,13 @@ export default function() {
         }
       `}
       render={(data: StaticQueryData) => {
-        const {author, social} = data.site.siteMetadata
+        const {description, social} = data.site.siteMetadata
         return (
           <div>
             <p>
-              Written by <strong>{author.name}</strong> who lives and works in Redlands building
-              useful things.
-              {` `}
-              <a href={social.twitter}>You should follow him on Twitter</a>
+              {description}
+              <br />
+              <a href={social.twitter}>Twitter</a>
             </p>
           </div>
         )
