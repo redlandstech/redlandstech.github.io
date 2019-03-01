@@ -4,13 +4,13 @@ import {GlobalStyle} from '../styles/theme'
 import * as logo from '../../static/logo-purple.png'
 
 interface Props {
-  readonly title: string
+  readonly title?: string
   readonly children?: React.ReactNode[] | React.ReactNode
 }
 
 export default class Layout extends React.Component<Props> {
   render() {
-    const {title, children} = this.props
+    const {children} = this.props
 
     return (
       <>
@@ -19,7 +19,7 @@ export default class Layout extends React.Component<Props> {
           <ul>
             <li>
               <Link to={`/`}>
-                <img src={logo} width={167} />
+                <img src={logo} width={167} alt={this.props.title} />
               </Link>
             </li>
             <li>

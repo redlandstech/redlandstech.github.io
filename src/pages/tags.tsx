@@ -4,7 +4,6 @@ import {Link, graphql} from 'gatsby'
 import Bio from '../components/bio'
 import Layout from '../components/layout'
 import Head from '../components/head'
-import TagTemplate from '../templates/tag'
 
 interface Props {
   readonly data: PageQueryData
