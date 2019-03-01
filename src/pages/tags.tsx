@@ -9,7 +9,7 @@ interface Props {
   readonly data: PageQueryData
 }
 
-export default class Index extends React.Component<Props> {
+export default class Tags extends React.Component<Props> {
   render() {
     const {data} = this.props
     const siteTitle = data.site.siteMetadata.title
