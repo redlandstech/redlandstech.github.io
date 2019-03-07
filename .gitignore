@@ -113,3 +113,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Local certificates
+localhost-cert.pem
+localhost-privkey.pem
