@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[redlands.tech]]></title><description><![CDATA[A collective of engineers, designers, entrepreneurs, students and creative hackers in Redlands, California]]></description><link>https://redlands.tech</link><generator>RSS for Node</generator><lastBuildDate>Thu, 07 Mar 2019 01:11:46 GMT</lastBuildDate><item><title><![CDATA[Markdown Features Test]]></title><description><![CDATA[Markdown: Syntax From  https://raw.githubusercontent.com/sparanoid/almace-scaffolding/master/ app/ posts/note/2014-06-06-markdown-features…]]></description><link>https://redlands.tech/example-markdown-features/</link><guid isPermaLink="false">https://redlands.tech/example-markdown-features/</guid><pubDate>Fri, 01 Mar 2019 22:12:03 GMT</pubDate><content:encoded>&lt;h1 id=&quot;markdown-syntax&quot;&gt;&lt;a href=&quot;#markdown-syntax&quot; aria-label=&quot;markdown syntax permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Markdown: Syntax&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;From &lt;a href=&quot;https://raw.githubusercontent.com/sparanoid/almace-scaffolding/master/_app/_posts/note/2014-06-06-markdown-features-test.md&quot;&gt;https://raw.githubusercontent.com/sparanoid/almace-scaffolding/master/&lt;em&gt;app/&lt;/em&gt;posts/note/2014-06-06-markdown-features-test.md&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;indented-code-blocks&quot;&gt;&lt;a href=&quot;#indented-code-blocks&quot; aria-label=&quot;indented code blocks permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Indented Code Blocks&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @widget }
+  end
+end&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;liquid-tag-with-linenos-support&quot;&gt;&lt;a href=&quot;#liquid-tag-with-linenos-support&quot; aria-label=&quot;liquid tag with linenos support permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Liquid Tag with &lt;code class=&quot;language-text&quot;&gt;linenos&lt;/code&gt; Support&lt;/h2&gt;
+&lt;p&gt;{% highlight ruby linenos %}
+def show
+@widget = Widget(params[:id])
+respond_to do |format|
+format.html # show.html.erb
+format.json { render json: @widget }
+end
+end
+{% endhighlight %}&lt;/p&gt;
+&lt;h2 id=&quot;gfm-code-blocks-fenced_code_blocks&quot;&gt;&lt;a href=&quot;#gfm-code-blocks-fenced_code_blocks&quot; aria-label=&quot;gfm code blocks fenced_code_blocks permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GFM Code Blocks (&lt;code class=&quot;language-text&quot;&gt;fenced_code_blocks&lt;/code&gt;)&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/* Background color function */&lt;/span&gt;
+.code-bg &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@v&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; when &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;lightness&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token rule&quot;&gt;@v&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &gt;= 50%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@return-bg&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;mix&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;#000, &lt;span class=&quot;token function&quot;&gt;lighten&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token rule&quot;&gt;@v&lt;/span&gt;, 30%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, 10%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+.code-bg &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@v&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; when &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;lightness&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token rule&quot;&gt;@v&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &amp;lt; 50%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@return-bg&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;mix&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;#fff, &lt;span class=&quot;token function&quot;&gt;darken&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token rule&quot;&gt;@v&lt;/span&gt;, 10%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, 70%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;smartypants&quot;&gt;&lt;a href=&quot;#smartypants&quot; aria-label=&quot;smartypants permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SmartyPants&lt;/h3&gt;
+&lt;p&gt;“Aha! What’s up, man?” — Jony said.&lt;/p&gt;
+&lt;h2 id=&quot;tables&quot;&gt;&lt;a href=&quot;#tables&quot; aria-label=&quot;tables permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tables&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Upvotes&lt;/th&gt;
+&lt;th&gt;Downvotes&lt;/th&gt;
+&lt;th&gt;Abstentions&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Alice&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Bob&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Charlie&lt;/td&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Totals&lt;/td&gt;
+&lt;td&gt;21&lt;/td&gt;
+&lt;td&gt;23&lt;/td&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;intra-emphasis&quot;&gt;&lt;a href=&quot;#intra-emphasis&quot; aria-label=&quot;intra emphasis permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Intra-emphasis&lt;/h2&gt;
+&lt;p&gt;foo&lt;em&gt;bar&lt;/em&gt;baz&lt;/p&gt;
+&lt;h2 id=&quot;auto-link&quot;&gt;&lt;a href=&quot;#auto-link&quot; aria-label=&quot;auto link permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Auto-link&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://sparanoid.com/&quot;&gt;https://sparanoid.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;strikethroughs&quot;&gt;&lt;a href=&quot;#strikethroughs&quot; aria-label=&quot;strikethroughs permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Strikethroughs&lt;/h2&gt;
+&lt;p&gt;This is &lt;del&gt;good&lt;/del&gt; bad.&lt;/p&gt;
+&lt;h2 id=&quot;space-after-headers&quot;&gt;&lt;a href=&quot;#space-after-headers&quot; aria-label=&quot;space after headers permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Space after Headers&lt;/h2&gt;
+&lt;h3 id=&quot;this-is-not-a-header&quot;&gt;&lt;a href=&quot;#this-is-not-a-header&quot; aria-label=&quot;this is not a header permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;This is not a header.&lt;/h3&gt;
+&lt;h2 id=&quot;superscripts&quot;&gt;&lt;a href=&quot;#superscripts&quot; aria-label=&quot;superscripts permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Superscripts&lt;/h2&gt;
+&lt;p&gt;This is the 2^(nd) time.&lt;/p&gt;
+&lt;h2 id=&quot;footnotes&quot;&gt;&lt;a href=&quot;#footnotes&quot; aria-label=&quot;footnotes permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Footnotes&lt;/h2&gt;
+&lt;p&gt;This&lt;sup id=&quot;fnref-1&quot;&gt;&lt;a href=&quot;#fn-1&quot; class=&quot;footnote-ref&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; is&lt;sup id=&quot;fnref-2&quot;&gt;&lt;a href=&quot;#fn-2&quot; class=&quot;footnote-ref&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; a sentence&lt;sup id=&quot;fnref-3&quot;&gt;&lt;a href=&quot;#fn-3&quot; class=&quot;footnote-ref&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;id-日本語タイトル&quot;&gt;&lt;a href=&quot;#id-%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB&quot; aria-label=&quot;id 日本語タイトル permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ID 日本語タイトル&lt;/h2&gt;
+&lt;p&gt;Expected id should be &lt;code class=&quot;language-text&quot;&gt;id-ri-ben-yu-taitoru&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;id-中文標題&quot;&gt;&lt;a href=&quot;#id-%E4%B8%AD%E6%96%87%E6%A8%99%E9%A1%8C&quot; aria-label=&quot;id 中文標題 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ID 中文標題&lt;/h2&gt;
+&lt;p&gt;Expected id should be &lt;code class=&quot;language-text&quot;&gt;id-zhong-wen-biao-ti&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn-1&quot;&gt;
+&lt;p&gt;Lorem lean startup ipsum &lt;strong&gt;product market fit customer development&lt;/strong&gt; acquihire technical cofounder. User engagement A/B testing shrink a market venture capital pitch deck. Social bookmarking group buying &lt;a href=&quot;#&quot;&gt;crowded market&lt;/a&gt; pivot onboarding freemium prototype ping pong. Early stage disruptive ecosystem community outreach dynamic location based strategic investor.&lt;/p&gt;
+&lt;a href=&quot;#fnref-1&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn-2&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://web.archive.org/web/20160425094356/http://blog.readability.com:80/2012/06/announcement/&quot;&gt;An Important Announcement&lt;/a&gt; by Richard Ziade at Readability&lt;/p&gt;
+&lt;a href=&quot;#fnref-2&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn-3&quot;&gt;
+&lt;p&gt;Good afterble constanoon, this sweet hongi is as bung as a stuffed morepork. Mean while, in the marae, Dr Ropata and Hairy Maclary from Donaldson’s Dairy were up to no good with a bunch of bloody troties.&lt;/p&gt;
+&lt;a href=&quot;#fnref-3&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Building a 3D room]]></title><description><![CDATA[Planning Trello Inspiration Plan People Step 1: projector - 3d scene - single wall - reacts to your head moving Step 2: 2 WALLS! 2 panels at…]]></description><link>https://redlands.tech/3d-room/</link><guid isPermaLink="false">https://redlands.tech/3d-room/</guid><pubDate>Fri, 01 Mar 2019 22:12:03 GMT</pubDate><content:encoded>&lt;h2 id=&quot;planning&quot;&gt;&lt;a href=&quot;#planning&quot; aria-label=&quot;planning permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Planning&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Trello&lt;/li&gt;
+&lt;li&gt;Inspiration&lt;/li&gt;
+&lt;li&gt;Plan&lt;/li&gt;
+&lt;li&gt;People&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Step 1:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;projector - 3d scene - single wall - reacts to your head moving&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Step 2:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;2 WALLS!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2 panels at different angles&lt;/li&gt;
+&lt;li&gt;2 different camera angles (so we need to move 2 cameras)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Step 3 (someday this weekend):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Configurable (easer to configure)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;4: build the room&lt;/p&gt;
+&lt;p&gt;5: multiple projectors per wall (includes floor maybe)&lt;/p&gt;
+&lt;p&gt;6: multiple tracking inputs&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;maybe multiple iPhones&lt;/li&gt;
+&lt;li&gt;would need a server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;step 8: multiple projector outputs (video drivers) — chrome cast?&lt;/p&gt;
+&lt;p&gt;step 9: different scenes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Targets as initial&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;OR Jedi training droid&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;droid shooting lasers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;build a castle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;materials&quot;&gt;&lt;a href=&quot;#materials&quot; aria-label=&quot;materials permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Materials&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Projectors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;getting-started&quot;&gt;&lt;a href=&quot;#getting-started&quot; aria-label=&quot;getting started permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting started&lt;/h2&gt;
+&lt;p&gt;We started by working on face detection thinking this would be our plan:&lt;/p&gt;
+&lt;p&gt;ARKit
+eyes
+VisionFaceDetection (droids on roids)&lt;/p&gt;
+&lt;p&gt;We tried EVFaceTracker: (which doesn’t use ARKit):&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/evermeer/EVFaceTracker&quot;&gt;https://github.com/evermeer/EVFaceTracker&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We got discouraged and decided to simplify. Knowing how to do the ditance and perspective calulations
+on a wii-mote, we thought it would be easier to start there. Little did we know&lt;/p&gt;
+&lt;p&gt;wii-homebrew
+&lt;a href=&quot;https://github.com/JustinBis/wjoy-foohid&quot;&gt;https://github.com/JustinBis/wjoy-foohid&lt;/a&gt; (required disabling kext signing)
+nodewii (doesn’t work with modern osx)
+noble (didn’t detect, uses hacked XPC bindings)
+noble-mac (modern version, worked, but didn’t detect the wiimote)
+node-bluetooth (detected the device, couldn’t read/write)&lt;/p&gt;
+&lt;p&gt;We gave up and started looking into the 3d scene:&lt;/p&gt;
+&lt;p&gt;scenekit (worked, but was apple only, we knew that the scene rendering and vision would have to be separate)
+unity (we knew there was a wiimote library, but couldn’t figure out how to use it, also knew we couldn’t figure out how to pipe in and out)
+unity-wiimote (never got an example working)
+three.js (could use sockets, could go back to vision based movement)&lt;/p&gt;
+&lt;p&gt;Found:
+&lt;a href=&quot;https://github.com/wiiuse/wiiuse&quot;&gt;https://github.com/wiiuse/wiiuse&lt;/a&gt;
+got it working, got three.js working
+mixed in socket.io
+express&lt;/p&gt;
+&lt;h1 id=&quot;day-two&quot;&gt;&lt;a href=&quot;#day-two&quot; aria-label=&quot;day two permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Day two&lt;/h1&gt;
+&lt;p&gt;We got breakfast&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/35def9276882510a63bdfd87eaef5b8d/b80f6/front-oam-view-940x400.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 42.5531914893617%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAP/aAAwDAQACEAMQAAABWvPcYEC//8QAGhABAAIDAQAAAAAAAAAAAAAAAgEEABIxA//aAAgBAQABBQKLc6qxtD92kePDz//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/AYj/xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPwGn/8QAGRABAAIDAAAAAAAAAAAAAAAAAQAREiAi/9oACAEBAAY/AjmUjLydP//EABwQAAIBBQEAAAAAAAAAAAAAAAERACAhMUGBkf/aAAgBAQABPyExBDsuHhvO4SeCjP8A/9oADAMBAAIAAwAAABDj7//EABURAQEAAAAAAAAAAAAAAAAAABEQ/9oACAEDAQE/EAR//8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAECAQE/ELTX/8QAHBAAAgICAwAAAAAAAAAAAAAAAREAMSFxQWGR/9oACAEBAAE/EF0wCYsuY7TNCiA4L6MKjMcUC1L9yvsqn//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;front oam view 940x400&quot;
+        title=&quot;&quot;
+        src=&quot;/static/35def9276882510a63bdfd87eaef5b8d/f8fb9/front-oam-view-940x400.jpg&quot;
+        srcset=&quot;/static/35def9276882510a63bdfd87eaef5b8d/e8976/front-oam-view-940x400.jpg 148w,
+/static/35def9276882510a63bdfd87eaef5b8d/63df2/front-oam-view-940x400.jpg 295w,
+/static/35def9276882510a63bdfd87eaef5b8d/f8fb9/front-oam-view-940x400.jpg 590w,
+/static/35def9276882510a63bdfd87eaef5b8d/85e3d/front-oam-view-940x400.jpg 885w,
+/static/35def9276882510a63bdfd87eaef5b8d/b80f6/front-oam-view-940x400.jpg 940w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://rpl.cat/uploads/_XwSQqnot5WNgLsKHD6unCUs657cciQyZicgU-IYINc/public.png&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;the-plan&quot;&gt;&lt;a href=&quot;#the-plan&quot; aria-label=&quot;the plan permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The plan&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Test range of wiimote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Done there is a lot more distance (16” - 13ft)&lt;/li&gt;
+&lt;li&gt;Angle of horizontal visibiliy seems questionable&lt;/li&gt;
+&lt;li&gt;Possible multiple wii remote inputs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;13   956
+12   948  L/R 959
+11   941      954
+10   933      945
+9    922      936
+8    911      926
+7    894      911
+6    870      892
+5    840      865
+4    729      828
+3    712      761
+2    543      626&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Left and right (with cursor position)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Jumping back to face detection, get distance with three.js&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;figuring out distance math with iphone&lt;/li&gt;
+&lt;li&gt;socket to node server&lt;/li&gt;
+&lt;li&gt;smoothing/easing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Multiple projectors at the same time&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Hack Night - April 2018]]></title><description><![CDATA[We bought 11 Furbies, grabbed some scissors and connected up soe bluetooth.]]></description><link>https://redlands.tech/hack-night-april-2018/</link><guid isPermaLink="false">https://redlands.tech/hack-night-april-2018/</guid><pubDate>Fri, 01 Feb 2019 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;We bought 11 Furbies, grabbed some scissors and connected up soe bluetooth.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/281e173aa14fe77b97ccba5988ac11d2/4728e/Hack-Night-April-2018-2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 129.39453125%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAABcSAAAXEgFnn9JSAAAEBklEQVRIx41WW28bRRj1E20SX/Z+v+96vbY3dnzJzaqJSkhKG0QoVROEkCiiiFeeKhBPCCHxrw9n1rFjJ2mVh08z883Mme92vt2a2mxAqe9A3tmGRFmO1Zx6sf8pURr1jXVNXHJMA4HnIgkDhBzbcYR2EsE19BWouFgJ10q9vpAbsHXQmsSNUFORErTj2Ig4upTEcWGp6gKw1YQmS1ClFgxdgWkqsCyZuuZ9C1tU/J64ODY0vIlCOLw8tQMMKbFuIvZ9dLMcUb9E+3CCwVdHSMsASelCkx5ymYq/OwTQVXRpaaJq+DrpobA9BIqG6XCMyWAEzTAQddsYX57ADXT4iUlrW/diWgH+V4R4HTj40OvSOhfvignmBJ1nfYzKIc7PLuCGEdJRif2rM0wuBjj5aR+G1lzFcim1BhVXvoU3BPwhTXFg2/gizHFEOe1PYDOO04Nj7J2ewS9ylKdT9OcFZm8HjKMETWnCNCToavMmKUR9HzsoVBm7zGqu67jO9xBrBhyCDbKCVWAiTDOEvQzZtERxmCDIHMyv2zj+NkWQMKl9Y2GhcPmfTogxkyJiaEpNvM1HmPkZbE3Di6MTxLS8uzdBtr/LpDxj/Az4sYn20MLrP4aIOxocV2YN3wD+yxheRx7+7PcqC18xfhMvRsZ4Xj5/ibIcIIhTFPN9jL55jmc/HmJ6UaL52RYuPwxQjK0KbFU23/smXto6vgsCjOjeq6jAeTZEbjroJhlms8/RHk/gZBHKLw/QnWUYnrbR2trC/CpDOXMhbe/cMkWjq57nUVwokgiyBoMxNRQZFvd820RgsSa5rzUacHUDsesjcl20nu5A2rplU01wNifVyk6OQbfgIQedJEEaLC50220MGApBx7LowONjaeDybM5zMVnUeIDLzG5ERgg+u5aFjJezOEYnYwZJRwEeU0KWSKq1ULCgE2XRVO7yuSYmFinkkZc+JaA41bqxUbDrFxUxrqwSexsW1uGRdpljoaArReAhp7Rdq7LOty34jN9dzn60fak3L4qOorZalWiSVI26dCsfA7zHZaV537WHZL0nfsrS2mNffmznrqmPtPCxHlQWGuzGooBtnZykaIynyaIWc0tVKhF7Ns+Ii+KsSZ3DmlzqN1zWROAJKkDEQbFhyC3O5SohxmpPxtIAvTJCqeaGIm0CikuiuMUowAVosyW+IdIKUNDQkOUKuFrLC2oujRC6Rfsi9ULW2y5pl0XBApgun6cGcodtynEqlyxabAv3RWjEmvP1shJhWnTsp08w3Rvit1/f45ef32F/PIK+/QR/HXiY91LMjmfI+HnVdrbg8zHxqU18DyE5fzehG1kWTWKpFD2yzv7W3N6GeLDaE3pyd/kzIK/xeL10/gepuZ9QU40WlwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Hack Night April 2018 2&quot;
+        title=&quot;&quot;
+        src=&quot;/static/281e173aa14fe77b97ccba5988ac11d2/40fad/Hack-Night-April-2018-2.png&quot;
+        srcset=&quot;/static/281e173aa14fe77b97ccba5988ac11d2/707e9/Hack-Night-April-2018-2.png 148w,
+/static/281e173aa14fe77b97ccba5988ac11d2/649e0/Hack-Night-April-2018-2.png 295w,
+/static/281e173aa14fe77b97ccba5988ac11d2/40fad/Hack-Night-April-2018-2.png 590w,
+/static/281e173aa14fe77b97ccba5988ac11d2/b3fef/Hack-Night-April-2018-2.png 885w,
+/static/281e173aa14fe77b97ccba5988ac11d2/4728e/Hack-Night-April-2018-2.png 1024w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hack Night - December 2017]]></title><description><![CDATA[We bought 11 Furbies, grabbed some scissors and connected up soe bluetooth.]]></description><link>https://redlands.tech/hack-night-december-2017/</link><guid isPermaLink="false">https://redlands.tech/hack-night-december-2017/</guid><pubDate>Fri, 01 Feb 2019 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;We bought 11 Furbies, grabbed some scissors and connected up soe bluetooth.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/077f4f28a93ec6809e2b078b5678cd95/4728e/Hack-Night-December-2017-2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 154.00390625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAfCAYAAADnTu3OAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFi0lEQVRIx61WW5LbRBSVZMt6q/WW9fJjPB7Hk0kIBApYQ6rCwIw9E1YwQ7GWZAmkKskiUpVl8EMRftkBoQriPhzJdmpSJHzx0dXdtvro3nPPPS3l8ePHbx48eID1ei3Xq5U8Pz+XZ+dncnW+6vbtfHbGffvffuYz56tz+d23Z3K9XsnT09O/r69/wKtXr66Uhw8f/qkoCkpdkYWmIOS63RscYc+EGNjdXtF6UAcmlIHOtYK+pWLgKrD87vm3ruPh6dOfrpVHjx69aQ8sUyHnoS9HnitNXZe1H8llPpKzopGu48okzWVz61im45GMy1wW00wuP69lMxMyrfpvq6rBixfPr5XLy8sOsHAtOfFsRqRDU1SUjsAya1BFGTRGFyUZyqMlkvEIQZ4gKgIcnGSYLDwZDdW3w2GJ5y+eXSvri4sO8JPUl8vQw1z40FUNue1jHpc4GNZwbRcijJDUI4g8g8hixGWI6jBCOXFkmO0AnxPwYgeY2oZMDB1ByxH3YmDBN2z4toMeIxyYJgyuTc9Fr9+H5RkwbR1+qEty+rYoSjxrAVfrizcaAe6Qw+PAw4QHEtPCIsxR+jEmeYXQD3jYQTY56FLWej2EuY/xMsWte6HUegTcR3hOQJ2A88iVn8UCjesgNW0CxzgZjtEkQwhPIMmGqJcnKG8dwfY9RtxH3gjUM0+2VS5LRvhsBzjYAX6ZBpj7fhfhPMiwSOoOMI1SxGmOanGMtC3KMIErLFSzCLPbYgtY7CJc7TicBI6sbRMj1yWPBhovgt0fIPZDRCJEECXw2hFHcAIfInFRTEOM5q5UtRsp74vS+LY0etpWxK2oWZDCC1kUt9u3vHlxgrAqu6L0dUpp6CKvnXcRdkXZy+YOZRObg+7wgFVtOaxEgtmwgWWwYwiWNhNkBxMMLBNp3comZoT+tsr7CPeAy9iTi8DFyKE0en1Md4DzcgyTFIQUdqvDfQZJHaGex0hLU9reVjbvAZ4wwntJgONAwGRKBwSbRqzwLuWIRcknM+QHU0ZoMUIW5E6O8ZFPYX+Aw8ozZeVYrLABlfuAHA4Y6T6itv1sEXSd0nLYI4ci4fOMsE35HYc3e/nAdxARsN1nFkVOcReUTJuyH0QIqMWIRTFdG2EmEBc+0sKUbvABDu/lQn6VhVgK0QHGpoO7wynyIEG/r3c6nH5yH8XRnMJ2kVYRFvcLjGkOSXnDHFa7Trmd+PKLYUxBC1iUiNnTcZRWnWw0TUPIKheHR51sREqjIGBzFKMYOzIubpjDvvUOQ7dLeex5HWBh077SbadY7JxW2GkzRlCwUDndhvY1nHI0tgxuus0+5aFrSoORpHQVTVU7t4lpYZ61dWyT84Bctq7T13WmTTeKLESZIbX+Ddns3eaYKd+L/c4c2tabUjaH9MM8iKGzqi5b0qFGHduGRfB8kmJCt5mdCOlHH3GbT1tAZws4E7SmtME4K7uU94CCRWvXhqVTMn7H4b/cpr2QFuyUr9KtsFvAZThEwygX1RS+63dguj6A3XYSX6D2SNMkQDXd2ldVVVvAPYc1zSFnL2fsU5spFrxTXN5yqaDrEMAkd+1zOvnr1iqlVXjUo/VhwIxFCborYGsQHsEEtejRqfs3Oqa/43O/53g/5b0O72ZCfp2HncF6TK12AtwvZzhuZjB2L/nQ0DT134D91mCFLU9465WsYky7Stl67TU6SouPgm0j1t8HXF9e/sGiyNtZsLmfhht2ykYY5qbyws0iazaH5Xjj2M6GhzbsmPeGqqobg8/yv7/quqZsnl8pp6fftj/A3n1+9HZv7nV7lbP6nxG+c/gw5KfI0x+VJ0+e/Pzwm29+u7h89CvTf8075jUdiPP69Wq9HRe73z42+PH0y9XV1e8vX778XgFgcJj/0+j9A8IVUHGlj5djAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Hack Night December 2017 2&quot;
+        title=&quot;&quot;
+        src=&quot;/static/077f4f28a93ec6809e2b078b5678cd95/40fad/Hack-Night-December-2017-2.png&quot;
+        srcset=&quot;/static/077f4f28a93ec6809e2b078b5678cd95/707e9/Hack-Night-December-2017-2.png 148w,
+/static/077f4f28a93ec6809e2b078b5678cd95/649e0/Hack-Night-December-2017-2.png 295w,
+/static/077f4f28a93ec6809e2b078b5678cd95/40fad/Hack-Night-December-2017-2.png 590w,
+/static/077f4f28a93ec6809e2b078b5678cd95/b3fef/Hack-Night-December-2017-2.png 885w,
+/static/077f4f28a93ec6809e2b078b5678cd95/4728e/Hack-Night-December-2017-2.png 1024w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hack Night - October 2017]]></title><description><![CDATA[We bought 11 Furbies, grabbed some scissors and connected up some bluetooth.]]></description><link>https://redlands.tech/hack-night-october-2017/</link><guid isPermaLink="false">https://redlands.tech/hack-night-october-2017/</guid><pubDate>Fri, 01 Feb 2019 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;We bought 11 Furbies, grabbed some scissors and connected up some bluetooth.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hack Night - February 2018]]></title><description><![CDATA[We bought 11 Furbies, grabbed some scissors and connected up some bluetooth.]]></description><link>https://redlands.tech/hack-night-february-2018/</link><guid isPermaLink="false">https://redlands.tech/hack-night-february-2018/</guid><pubDate>Fri, 01 Feb 2019 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;We bought 11 Furbies, grabbed some scissors and connected up some bluetooth.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Example Markdown from https://markdown-it.github.io/]]></title><description><![CDATA[Markdown: Syntax From  https://raw.githubusercontent.com/mxstbr/markdown-test-file/master/TEST.md Overview Philosophy Inline HTML Automatic…]]></description><link>https://redlands.tech/example-markdown-it-markdown/</link><guid isPermaLink="false">https://redlands.tech/example-markdown-it-markdown/</guid><pubDate>Fri, 01 Feb 2019 22:12:03 GMT</pubDate><content:encoded>&lt;h1 id=&quot;markdown-syntax&quot;&gt;&lt;a href=&quot;#markdown-syntax&quot; aria-label=&quot;markdown syntax permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Markdown: Syntax&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;From &lt;a href=&quot;https://raw.githubusercontent.com/mxstbr/markdown-test-file/master/TEST.md&quot;&gt;https://raw.githubusercontent.com/mxstbr/markdown-test-file/master/TEST.md&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#overview&quot;&gt;Overview&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#philosophy&quot;&gt;Philosophy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#html&quot;&gt;Inline HTML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#autoescape&quot;&gt;Automatic Escaping for Special Characters&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#block&quot;&gt;Block Elements&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#p&quot;&gt;Paragraphs and Line Breaks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#header&quot;&gt;Headers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#blockquote&quot;&gt;Blockquotes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#list&quot;&gt;Lists&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#precode&quot;&gt;Code Blocks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#hr&quot;&gt;Horizontal Rules&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#span&quot;&gt;Span Elements&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#link&quot;&gt;Links&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#em&quot;&gt;Emphasis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#code&quot;&gt;Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#img&quot;&gt;Images&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#misc&quot;&gt;Miscellaneous&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#backslash&quot;&gt;Backslash Escapes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#autolink&quot;&gt;Automatic Links&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This document is itself written using Markdown; you
+can &lt;a href=&quot;/projects/markdown/syntax.text&quot;&gt;see the source for it by adding ‘.text’ to the URL&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;overview&quot;&gt;&lt;a href=&quot;#overview&quot; aria-label=&quot;overview permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Overview&lt;/h2&gt;
+&lt;h3 id=&quot;philosophy&quot;&gt;&lt;a href=&quot;#philosophy&quot; aria-label=&quot;philosophy permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Philosophy&lt;/h3&gt;
+&lt;p&gt;Markdown is intended to be as easy-to-read and easy-to-write as is feasible.&lt;/p&gt;
+&lt;p&gt;Readability, however, is emphasized above all else. A Markdown-formatted
+document should be publishable as-is, as plain text, without looking
+like it’s been marked up with tags or formatting instructions. While
+Markdown’s syntax has been influenced by several existing text-to-HTML
+filters — including &lt;a href=&quot;http://docutils.sourceforge.net/mirror/setext.html&quot;&gt;Setext&lt;/a&gt;, &lt;a href=&quot;http://www.aaronsw.com/2002/atx/&quot;&gt;atx&lt;/a&gt;, &lt;a href=&quot;http://textism.com/tools/textile/&quot;&gt;Textile&lt;/a&gt;, &lt;a href=&quot;http://docutils.sourceforge.net/rst.html&quot;&gt;reStructuredText&lt;/a&gt;,
+&lt;a href=&quot;http://www.triptico.com/software/grutatxt.html&quot;&gt;Grutatext&lt;/a&gt;, and &lt;a href=&quot;http://ettext.taint.org/doc/&quot;&gt;EtText&lt;/a&gt; — the single biggest source of
+inspiration for Markdown’s syntax is the format of plain text email.&lt;/p&gt;
+&lt;h2 id=&quot;block-elements&quot;&gt;&lt;a href=&quot;#block-elements&quot; aria-label=&quot;block elements permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Block Elements&lt;/h2&gt;
+&lt;h3 id=&quot;paragraphs-and-line-breaks&quot;&gt;&lt;a href=&quot;#paragraphs-and-line-breaks&quot; aria-label=&quot;paragraphs and line breaks permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Paragraphs and Line Breaks&lt;/h3&gt;
+&lt;p&gt;A paragraph is simply one or more consecutive lines of text, separated
+by one or more blank lines. (A blank line is any line that looks like a
+blank line — a line containing nothing but spaces or tabs is considered
+blank.) Normal paragraphs should not be indented with spaces or tabs.&lt;/p&gt;
+&lt;p&gt;The implication of the “one or more consecutive lines of text” rule is
+that Markdown supports “hard-wrapped” text paragraphs. This differs
+significantly from most other text-to-HTML formatters (including Movable
+Type’s “Convert Line Breaks” option) which translate every line break
+character in a paragraph into a &lt;code class=&quot;language-text&quot;&gt;&amp;lt;br /&amp;gt;&lt;/code&gt; tag.&lt;/p&gt;
+&lt;p&gt;When you &lt;em&gt;do&lt;/em&gt; want to insert a &lt;code class=&quot;language-text&quot;&gt;&amp;lt;br /&amp;gt;&lt;/code&gt; break tag using Markdown, you
+end a line with two or more spaces, then type return.&lt;/p&gt;
+&lt;h3 id=&quot;headers&quot;&gt;&lt;a href=&quot;#headers&quot; aria-label=&quot;headers permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Headers&lt;/h3&gt;
+&lt;p&gt;Markdown supports two styles of headers, [Setext][1] and [atx][2].&lt;/p&gt;
+&lt;p&gt;Optionally, you may “close” atx-style headers. This is purely
+cosmetic — you can use this if you think it looks better. The
+closing hashes don’t even need to match the number of hashes
+used to open the header. (The number of opening hashes
+determines the header level.)&lt;/p&gt;
+&lt;h3 id=&quot;blockquotes&quot;&gt;&lt;a href=&quot;#blockquotes&quot; aria-label=&quot;blockquotes permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Blockquotes&lt;/h3&gt;
+&lt;p&gt;Markdown uses email-style &lt;code class=&quot;language-text&quot;&gt;&amp;gt;&lt;/code&gt; characters for blockquoting. If you’re
+familiar with quoting passages of text in an email message, then you
+know how to create a blockquote in Markdown. It looks best if you hard
+wrap the text and put a &lt;code class=&quot;language-text&quot;&gt;&amp;gt;&lt;/code&gt; before every line:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
+&lt;p&gt;Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Markdown allows you to be lazy and only put the &lt;code class=&quot;language-text&quot;&gt;&amp;gt;&lt;/code&gt; before the first
+line of a hard-wrapped paragraph:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Blockquotes can be nested (i.e. a blockquote-in-a-blockquote) by
+adding additional levels of &lt;code class=&quot;language-text&quot;&gt;&amp;gt;&lt;/code&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is the first level of quoting.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is nested blockquote.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Back to the first level.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Blockquotes can contain other Markdown elements, including headers, lists,
+and code blocks:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;this-is-a-header&quot;&gt;&lt;a href=&quot;#this-is-a-header&quot; aria-label=&quot;this is a header permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;This is a header.&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;This is the first list item.&lt;/li&gt;
+&lt;li&gt;This is the second list item.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here’s some example code:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;return shell_exec(&amp;quot;echo $input | $markdown_script&amp;quot;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Any decent text editor should make email-style quoting easy. For
+example, with BBEdit, you can make a selection and choose Increase
+Quote Level from the Text menu.&lt;/p&gt;
+&lt;h3 id=&quot;lists&quot;&gt;&lt;a href=&quot;#lists&quot; aria-label=&quot;lists permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lists&lt;/h3&gt;
+&lt;p&gt;Markdown supports ordered (numbered) and unordered (bulleted) lists.&lt;/p&gt;
+&lt;p&gt;Unordered lists use asterisks, pluses, and hyphens — interchangably
+— as list markers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Red&lt;/li&gt;
+&lt;li&gt;Green&lt;/li&gt;
+&lt;li&gt;Blue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;is equivalent to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Red&lt;/li&gt;
+&lt;li&gt;Green&lt;/li&gt;
+&lt;li&gt;Blue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;and:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Red&lt;/li&gt;
+&lt;li&gt;Green&lt;/li&gt;
+&lt;li&gt;Blue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ordered lists use numbers followed by periods:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Bird&lt;/li&gt;
+&lt;li&gt;McHale&lt;/li&gt;
+&lt;li&gt;Parish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It’s important to note that the actual numbers you use to mark the
+list have no effect on the HTML output Markdown produces. The HTML
+Markdown produces from the above list is:&lt;/p&gt;
+&lt;p&gt;If you instead wrote the list in Markdown like this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Bird&lt;/li&gt;
+&lt;li&gt;McHale&lt;/li&gt;
+&lt;li&gt;Parish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;or even:&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Bird&lt;/li&gt;
+&lt;li&gt;McHale&lt;/li&gt;
+&lt;li&gt;Parish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;you’d get the exact same HTML output. The point is, if you want to,
+you can use ordinal numbers in your ordered Markdown lists, so that
+the numbers in your source match the numbers in your published HTML.
+But if you want to be lazy, you don’t have to.&lt;/p&gt;
+&lt;p&gt;To make lists look nice, you can wrap items with hanging indents:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+viverra nec, fringilla in, laoreet vitae, risus.&lt;/li&gt;
+&lt;li&gt;Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+Suspendisse id sem consectetuer libero luctus adipiscing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But if you want to be lazy, you don’t have to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+viverra nec, fringilla in, laoreet vitae, risus.&lt;/li&gt;
+&lt;li&gt;Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+Suspendisse id sem consectetuer libero luctus adipiscing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;List items may consist of multiple paragraphs. Each subsequent
+paragraph in a list item must be indented by either 4 spaces
+or one tab:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;This is a list item with two paragraphs. Lorem ipsum dolor
+sit amet, consectetuer adipiscing elit. Aliquam hendrerit
+mi posuere lectus.&lt;/p&gt;
+&lt;p&gt;Vestibulum enim wisi, viverra nec, fringilla in, laoreet
+vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
+sit amet velit.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Suspendisse id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It looks nice if you indent every line of the subsequent
+paragraphs, but here again, Markdown will allow you to be
+lazy:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;This is a list item with two paragraphs.&lt;/p&gt;
+&lt;p&gt;  This is the second paragraph in the list item. You’re&lt;/p&gt;
+&lt;p&gt;only required to indent the first line. Lorem ipsum dolor
+sit amet, consectetuer adipiscing elit.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Another item in the same list.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To put a blockquote within a list item, the blockquote’s &lt;code class=&quot;language-text&quot;&gt;&amp;gt;&lt;/code&gt;
+delimiters need to be indented:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A list item with a blockquote:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote
+inside a list item.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To put a code block within a list item, the code block needs
+to be indented &lt;em&gt;twice&lt;/em&gt; — 8 spaces or two tabs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A list item with a code block:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;code goes here&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;code-blocks&quot;&gt;&lt;a href=&quot;#code-blocks&quot; aria-label=&quot;code blocks permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Code Blocks&lt;/h3&gt;
+&lt;p&gt;Pre-formatted code blocks are used for writing about programming or
+markup source code. Rather than forming normal paragraphs, the lines
+of a code block are interpreted literally. Markdown wraps a code block
+in both &lt;code class=&quot;language-text&quot;&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;&amp;lt;code&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;
+&lt;p&gt;To produce a code block in Markdown, simply indent every line of the
+block by at least 4 spaces or 1 tab.&lt;/p&gt;
+&lt;p&gt;This is a normal paragraph:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;This is a code block.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here is an example of AppleScript:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;tell application &amp;quot;Foo&amp;quot;
+    beep
+end tell&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;A code block continues until it reaches a line that is not indented
+(or the end of the article).&lt;/p&gt;
+&lt;p&gt;Within a code block, ampersands (&lt;code class=&quot;language-text&quot;&gt;&amp;amp;&lt;/code&gt;) and angle brackets (&lt;code class=&quot;language-text&quot;&gt;&amp;lt;&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;&amp;gt;&lt;/code&gt;)
+are automatically converted into HTML entities. This makes it very
+easy to include example HTML source code using Markdown — just paste
+it and indent it, and Markdown will handle the hassle of encoding the
+ampersands and angle brackets. For example, this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;div class=&amp;quot;footer&amp;quot;&amp;gt;
+    &amp;amp;copy; 2004 Foo Corporation
+&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Regular Markdown syntax is not processed within code blocks. E.g.,
+asterisks are just literal asterisks within a code block. This means
+it’s also easy to use Markdown to write about Markdown’s own syntax.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;tell application &amp;quot;Foo&amp;quot;
+    beep
+end tell&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;span-elements&quot;&gt;&lt;a href=&quot;#span-elements&quot; aria-label=&quot;span elements permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Span Elements&lt;/h2&gt;
+&lt;h3 id=&quot;links&quot;&gt;&lt;a href=&quot;#links&quot; aria-label=&quot;links permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Links&lt;/h3&gt;
+&lt;p&gt;Markdown supports two style of links: &lt;em&gt;inline&lt;/em&gt; and &lt;em&gt;reference&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In both styles, the link text is delimited by [square brackets].&lt;/p&gt;
+&lt;p&gt;To create an inline link, use a set of regular parentheses immediately
+after the link text’s closing square bracket. Inside the parentheses,
+put the URL where you want the link to point, along with an &lt;em&gt;optional&lt;/em&gt;
+title for the link, surrounded in quotes. For example:&lt;/p&gt;
+&lt;p&gt;This is &lt;a href=&quot;http://example.com/&quot;&gt;an example&lt;/a&gt; inline link.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://example.net/&quot;&gt;This link&lt;/a&gt; has no title attribute.&lt;/p&gt;
+&lt;h3 id=&quot;emphasis&quot;&gt;&lt;a href=&quot;#emphasis&quot; aria-label=&quot;emphasis permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Emphasis&lt;/h3&gt;
+&lt;p&gt;Markdown treats asterisks (&lt;code class=&quot;language-text&quot;&gt;*&lt;/code&gt;) and underscores (&lt;code class=&quot;language-text&quot;&gt;_&lt;/code&gt;) as indicators of
+emphasis. Text wrapped with one &lt;code class=&quot;language-text&quot;&gt;*&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;_&lt;/code&gt; will be wrapped with an
+HTML &lt;code class=&quot;language-text&quot;&gt;&amp;lt;em&amp;gt;&lt;/code&gt; tag; double &lt;code class=&quot;language-text&quot;&gt;*&lt;/code&gt;’s or &lt;code class=&quot;language-text&quot;&gt;_&lt;/code&gt;’s will be wrapped with an HTML
+&lt;code class=&quot;language-text&quot;&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tag. E.g., this input:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;single asterisks&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;single underscores&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;double asterisks&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;double underscores&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;images&quot;&gt;&lt;a href=&quot;#images&quot; aria-label=&quot;images permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Images&lt;/h3&gt;
+&lt;p&gt;You might have images that are embedded:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2275d622b969d4f57c3d444ef63b520e/4728e/Hack-Night-April-2018.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 154.49218749999997%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAfCAYAAADnTu3OAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADuklEQVRIx51WW28TRxT2X+xbpd5eWlpSKH1pGuoGUCkQaEjs4DjGzk2iIKX0ikijUlpoLm2fqip9QAkYiGPX8W3vu7OX2f04O4kTN951TEc62tmzM998Z86ZbzaBmBYEgbBe/aiWiAKKAt1zdIHHAvZi0aq3UKvWYxfq7Cc6HYcHuhYD0wzoigaVTGc2LMeJ3RYBeODwd59k3HXhEIBrWMLHOYfneqLP6JvOTLheJ7C/D9rN0NThyzKB0SRi5JoMtcoOtrcqMIkdI/N8DsYtAtf/A7bHcNfBK0V4j9chP3+KRrkMTuHSTEG5Ua2h2ZL2GTWkFjaLm5D1BprGBmTryQHDNqD7fAPQJTxcWUNmMotvv/8BT4pFLD/4DYt3F3GH7JcHD7G0tIRUKo1MZhKypMILNLSMR52Au1S53AQMBRubj5G7nsf5zy/gysgV3LxxC5dHR5EmkNGxNJLDZ5FKT2Bh4StwisD2VNqKejegr6vgrToC7mFldQ2XRi6jMJXH9NhVnPtoCMnzn+FaPo2R0atiQUmSxTzDbhKo1A0Y6Ap8Q4Ona+L9u9tfI5vNIfnqK0i+/jaODQ5iYOgtXKNQZ+bndzPuGAQWmhzBUJPhOzYCAjUNA5PjaUxO5VDITmF4cAgDH5zEWDolFvn4k9NQVBWub8HldjRDX2khoHIITANyqYS5mTl8efMWFm5/g9PJT3Hq1IfifXZuHscH3sf6o3X4cOH7PpVPM3oPw+aUS6iurSKXyyObzmAmP4O52XkUpmeRvV7AF+MpvHf8BJb/+hUSq4qysj0lIsvVLXg7JfiuA04hzxLgOGVTAFPoYSnlC9MYHj6Dd949RrXYICyfTs0OVPasuw75v8/glYvge2f1j+VVnD1zTuzjxUsjGE9NYGIig9feeBO56YIY43kegZWhsKcxRy8cpMrwFMo4Df5z5Xfc//k+frp3D6tUSmE53Vn8EY0mlQpnMG21lzgcqIwvxEGFb9lwNHPfb/MwDYBFwuB6bpd8RYtDp3yROGgNCVKtSWdZRkNWhTjEKXnfAlsnca1sV9HP2ETcfRIn8XFKfeSd0n7atg1d16FpdIJM88gFYwFDIIPqUaGMyyS4oUmSJHyMsZcDPMzOsixhbbDg0O3Xd8hh4Yb3SWgOZbfd/18hhxNVUhSDGLaZMmIZboHruv0Dxg3sd0w0w/09oq7aBDN0YmggkGpC0YOOv4i+kyIsdBT/RqtSwlZpG8E/KyTCrOc/TuKIuPCyW5Lo9ecVHGZMUtcrw2F7ARbHJmqW3kCIAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Hack night&quot;
+        title=&quot;&quot;
+        src=&quot;/static/2275d622b969d4f57c3d444ef63b520e/40fad/Hack-Night-April-2018.png&quot;
+        srcset=&quot;/static/2275d622b969d4f57c3d444ef63b520e/707e9/Hack-Night-April-2018.png 148w,
+/static/2275d622b969d4f57c3d444ef63b520e/649e0/Hack-Night-April-2018.png 295w,
+/static/2275d622b969d4f57c3d444ef63b520e/40fad/Hack-Night-April-2018.png 590w,
+/static/2275d622b969d4f57c3d444ef63b520e/b3fef/Hack-Night-April-2018.png 885w,
+/static/2275d622b969d4f57c3d444ef63b520e/4728e/Hack-Night-April-2018.png 1024w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; aria-label=&quot;code permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Code&lt;/h3&gt;
+&lt;p&gt;To indicate a span of code, wrap it with backtick quotes (&lt;code class=&quot;language-text&quot;&gt;`&lt;/code&gt;).
+Unlike a pre-formatted code block, a code span indicates code within a
+normal paragraph. For example:&lt;/p&gt;
+&lt;p&gt;Use the &lt;code class=&quot;language-text&quot;&gt;printf()&lt;/code&gt; function.&lt;/p&gt;
+&lt;p&gt;Code can also be syntax highlighted:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// This is an example interpolation&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; example &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Example Markdown]]></title><description><![CDATA[Markdown: Syntax From  https://raw.githubusercontent.com/mxstbr/markdown-test-file/master/TEST.md Overview Philosophy Inline HTML Automatic…]]></description><link>https://redlands.tech/example-markdown/</link><guid isPermaLink="false">https://redlands.tech/example-markdown/</guid><pubDate>Fri, 01 Feb 2019 22:12:03 GMT</pubDate><content:encoded>&lt;h1 id=&quot;markdown-syntax&quot;&gt;&lt;a href=&quot;#markdown-syntax&quot; aria-label=&quot;markdown syntax permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Markdown: Syntax&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;From &lt;a href=&quot;https://raw.githubusercontent.com/mxstbr/markdown-test-file/master/TEST.md&quot;&gt;https://raw.githubusercontent.com/mxstbr/markdown-test-file/master/TEST.md&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#overview&quot;&gt;Overview&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#philosophy&quot;&gt;Philosophy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#html&quot;&gt;Inline HTML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#autoescape&quot;&gt;Automatic Escaping for Special Characters&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#block&quot;&gt;Block Elements&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#p&quot;&gt;Paragraphs and Line Breaks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#header&quot;&gt;Headers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#blockquote&quot;&gt;Blockquotes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#list&quot;&gt;Lists&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#precode&quot;&gt;Code Blocks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#hr&quot;&gt;Horizontal Rules&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#span&quot;&gt;Span Elements&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#link&quot;&gt;Links&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#em&quot;&gt;Emphasis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#code&quot;&gt;Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#img&quot;&gt;Images&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#misc&quot;&gt;Miscellaneous&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#backslash&quot;&gt;Backslash Escapes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#autolink&quot;&gt;Automatic Links&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This document is itself written using Markdown; you
+can &lt;a href=&quot;/projects/markdown/syntax.text&quot;&gt;see the source for it by adding ‘.text’ to the URL&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;overview&quot;&gt;&lt;a href=&quot;#overview&quot; aria-label=&quot;overview permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Overview&lt;/h2&gt;
+&lt;h3 id=&quot;philosophy&quot;&gt;&lt;a href=&quot;#philosophy&quot; aria-label=&quot;philosophy permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Philosophy&lt;/h3&gt;
+&lt;p&gt;Markdown is intended to be as easy-to-read and easy-to-write as is feasible.&lt;/p&gt;
+&lt;p&gt;Readability, however, is emphasized above all else. A Markdown-formatted
+document should be publishable as-is, as plain text, without looking
+like it’s been marked up with tags or formatting instructions. While
+Markdown’s syntax has been influenced by several existing text-to-HTML
+filters — including &lt;a href=&quot;http://docutils.sourceforge.net/mirror/setext.html&quot;&gt;Setext&lt;/a&gt;, &lt;a href=&quot;http://www.aaronsw.com/2002/atx/&quot;&gt;atx&lt;/a&gt;, &lt;a href=&quot;http://textism.com/tools/textile/&quot;&gt;Textile&lt;/a&gt;, &lt;a href=&quot;http://docutils.sourceforge.net/rst.html&quot;&gt;reStructuredText&lt;/a&gt;,
+&lt;a href=&quot;http://www.triptico.com/software/grutatxt.html&quot;&gt;Grutatext&lt;/a&gt;, and &lt;a href=&quot;http://ettext.taint.org/doc/&quot;&gt;EtText&lt;/a&gt; — the single biggest source of
+inspiration for Markdown’s syntax is the format of plain text email.&lt;/p&gt;
+&lt;h2 id=&quot;block-elements&quot;&gt;&lt;a href=&quot;#block-elements&quot; aria-label=&quot;block elements permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Block Elements&lt;/h2&gt;
+&lt;h3 id=&quot;paragraphs-and-line-breaks&quot;&gt;&lt;a href=&quot;#paragraphs-and-line-breaks&quot; aria-label=&quot;paragraphs and line breaks permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Paragraphs and Line Breaks&lt;/h3&gt;
+&lt;p&gt;A paragraph is simply one or more consecutive lines of text, separated
+by one or more blank lines. (A blank line is any line that looks like a
+blank line — a line containing nothing but spaces or tabs is considered
+blank.) Normal paragraphs should not be indented with spaces or tabs.&lt;/p&gt;
+&lt;p&gt;The implication of the “one or more consecutive lines of text” rule is
+that Markdown supports “hard-wrapped” text paragraphs. This differs
+significantly from most other text-to-HTML formatters (including Movable
+Type’s “Convert Line Breaks” option) which translate every line break
+character in a paragraph into a &lt;code class=&quot;language-text&quot;&gt;&amp;lt;br /&amp;gt;&lt;/code&gt; tag.&lt;/p&gt;
+&lt;p&gt;When you &lt;em&gt;do&lt;/em&gt; want to insert a &lt;code class=&quot;language-text&quot;&gt;&amp;lt;br /&amp;gt;&lt;/code&gt; break tag using Markdown, you
+end a line with two or more spaces, then type return.&lt;/p&gt;
+&lt;h3 id=&quot;headers&quot;&gt;&lt;a href=&quot;#headers&quot; aria-label=&quot;headers permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Headers&lt;/h3&gt;
+&lt;p&gt;Markdown supports two styles of headers, [Setext][1] and [atx][2].&lt;/p&gt;
+&lt;p&gt;Optionally, you may “close” atx-style headers. This is purely
+cosmetic — you can use this if you think it looks better. The
+closing hashes don’t even need to match the number of hashes
+used to open the header. (The number of opening hashes
+determines the header level.)&lt;/p&gt;
+&lt;h3 id=&quot;blockquotes&quot;&gt;&lt;a href=&quot;#blockquotes&quot; aria-label=&quot;blockquotes permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Blockquotes&lt;/h3&gt;
+&lt;p&gt;Markdown uses email-style &lt;code class=&quot;language-text&quot;&gt;&amp;gt;&lt;/code&gt; characters for blockquoting. If you’re
+familiar with quoting passages of text in an email message, then you
+know how to create a blockquote in Markdown. It looks best if you hard
+wrap the text and put a &lt;code class=&quot;language-text&quot;&gt;&amp;gt;&lt;/code&gt; before every line:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
+&lt;p&gt;Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Markdown allows you to be lazy and only put the &lt;code class=&quot;language-text&quot;&gt;&amp;gt;&lt;/code&gt; before the first
+line of a hard-wrapped paragraph:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Blockquotes can be nested (i.e. a blockquote-in-a-blockquote) by
+adding additional levels of &lt;code class=&quot;language-text&quot;&gt;&amp;gt;&lt;/code&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is the first level of quoting.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is nested blockquote.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Back to the first level.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Blockquotes can contain other Markdown elements, including headers, lists,
+and code blocks:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;this-is-a-header&quot;&gt;&lt;a href=&quot;#this-is-a-header&quot; aria-label=&quot;this is a header permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;This is a header.&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;This is the first list item.&lt;/li&gt;
+&lt;li&gt;This is the second list item.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here’s some example code:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;return shell_exec(&amp;quot;echo $input | $markdown_script&amp;quot;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Any decent text editor should make email-style quoting easy. For
+example, with BBEdit, you can make a selection and choose Increase
+Quote Level from the Text menu.&lt;/p&gt;
+&lt;h3 id=&quot;lists&quot;&gt;&lt;a href=&quot;#lists&quot; aria-label=&quot;lists permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lists&lt;/h3&gt;
+&lt;p&gt;Markdown supports ordered (numbered) and unordered (bulleted) lists.&lt;/p&gt;
+&lt;p&gt;Unordered lists use asterisks, pluses, and hyphens — interchangably
+— as list markers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Red&lt;/li&gt;
+&lt;li&gt;Green&lt;/li&gt;
+&lt;li&gt;Blue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;is equivalent to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Red&lt;/li&gt;
+&lt;li&gt;Green&lt;/li&gt;
+&lt;li&gt;Blue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;and:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Red&lt;/li&gt;
+&lt;li&gt;Green&lt;/li&gt;
+&lt;li&gt;Blue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ordered lists use numbers followed by periods:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Bird&lt;/li&gt;
+&lt;li&gt;McHale&lt;/li&gt;
+&lt;li&gt;Parish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It’s important to note that the actual numbers you use to mark the
+list have no effect on the HTML output Markdown produces. The HTML
+Markdown produces from the above list is:&lt;/p&gt;
+&lt;p&gt;If you instead wrote the list in Markdown like this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Bird&lt;/li&gt;
+&lt;li&gt;McHale&lt;/li&gt;
+&lt;li&gt;Parish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;or even:&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Bird&lt;/li&gt;
+&lt;li&gt;McHale&lt;/li&gt;
+&lt;li&gt;Parish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;you’d get the exact same HTML output. The point is, if you want to,
+you can use ordinal numbers in your ordered Markdown lists, so that
+the numbers in your source match the numbers in your published HTML.
+But if you want to be lazy, you don’t have to.&lt;/p&gt;
+&lt;p&gt;To make lists look nice, you can wrap items with hanging indents:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+viverra nec, fringilla in, laoreet vitae, risus.&lt;/li&gt;
+&lt;li&gt;Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+Suspendisse id sem consectetuer libero luctus adipiscing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But if you want to be lazy, you don’t have to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+viverra nec, fringilla in, laoreet vitae, risus.&lt;/li&gt;
+&lt;li&gt;Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+Suspendisse id sem consectetuer libero luctus adipiscing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;List items may consist of multiple paragraphs. Each subsequent
+paragraph in a list item must be indented by either 4 spaces
+or one tab:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;This is a list item with two paragraphs. Lorem ipsum dolor
+sit amet, consectetuer adipiscing elit. Aliquam hendrerit
+mi posuere lectus.&lt;/p&gt;
+&lt;p&gt;Vestibulum enim wisi, viverra nec, fringilla in, laoreet
+vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
+sit amet velit.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Suspendisse id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It looks nice if you indent every line of the subsequent
+paragraphs, but here again, Markdown will allow you to be
+lazy:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;This is a list item with two paragraphs.&lt;/p&gt;
+&lt;p&gt;  This is the second paragraph in the list item. You’re&lt;/p&gt;
+&lt;p&gt;only required to indent the first line. Lorem ipsum dolor
+sit amet, consectetuer adipiscing elit.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Another item in the same list.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To put a blockquote within a list item, the blockquote’s &lt;code class=&quot;language-text&quot;&gt;&amp;gt;&lt;/code&gt;
+delimiters need to be indented:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A list item with a blockquote:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote
+inside a list item.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To put a code block within a list item, the code block needs
+to be indented &lt;em&gt;twice&lt;/em&gt; — 8 spaces or two tabs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A list item with a code block:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;code goes here&amp;gt;
+&amp;lt;/code&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;code-blocks&quot;&gt;&lt;a href=&quot;#code-blocks&quot; aria-label=&quot;code blocks permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Code Blocks&lt;/h3&gt;
+&lt;p&gt;Pre-formatted code blocks are used for writing about programming or
+markup source code. Rather than forming normal paragraphs, the lines
+of a code block are interpreted literally. Markdown wraps a code block
+in both &lt;code class=&quot;language-text&quot;&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;&amp;lt;code&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;
+&lt;p&gt;To produce a code block in Markdown, simply indent every line of the
+block by at least 4 spaces or 1 tab.&lt;/p&gt;
+&lt;p&gt;This is a normal paragraph:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;This is a code block.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here is an example of AppleScript:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;tell application &amp;quot;Foo&amp;quot;
+    beep
+end tell&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;A code block continues until it reaches a line that is not indented
+(or the end of the article).&lt;/p&gt;
+&lt;p&gt;Within a code block, ampersands (&lt;code class=&quot;language-text&quot;&gt;&amp;amp;&lt;/code&gt;) and angle brackets (&lt;code class=&quot;language-text&quot;&gt;&amp;lt;&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;&amp;gt;&lt;/code&gt;)
+are automatically converted into HTML entities. This makes it very
+easy to include example HTML source code using Markdown — just paste
+it and indent it, and Markdown will handle the hassle of encoding the
+ampersands and angle brackets. For example, this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;div class=&amp;quot;footer&amp;quot;&amp;gt;
+    &amp;amp;copy; 2004 Foo Corporation
+&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Regular Markdown syntax is not processed within code blocks. E.g.,
+asterisks are just literal asterisks within a code block. This means
+it’s also easy to use Markdown to write about Markdown’s own syntax.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;tell application &amp;quot;Foo&amp;quot;
+    beep
+end tell&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;span-elements&quot;&gt;&lt;a href=&quot;#span-elements&quot; aria-label=&quot;span elements permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Span Elements&lt;/h2&gt;
+&lt;h3 id=&quot;links&quot;&gt;&lt;a href=&quot;#links&quot; aria-label=&quot;links permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Links&lt;/h3&gt;
+&lt;p&gt;Markdown supports two style of links: &lt;em&gt;inline&lt;/em&gt; and &lt;em&gt;reference&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In both styles, the link text is delimited by [square brackets].&lt;/p&gt;
+&lt;p&gt;To create an inline link, use a set of regular parentheses immediately
+after the link text’s closing square bracket. Inside the parentheses,
+put the URL where you want the link to point, along with an &lt;em&gt;optional&lt;/em&gt;
+title for the link, surrounded in quotes. For example:&lt;/p&gt;
+&lt;p&gt;This is &lt;a href=&quot;http://example.com/&quot;&gt;an example&lt;/a&gt; inline link.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://example.net/&quot;&gt;This link&lt;/a&gt; has no title attribute.&lt;/p&gt;
+&lt;h3 id=&quot;emphasis&quot;&gt;&lt;a href=&quot;#emphasis&quot; aria-label=&quot;emphasis permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Emphasis&lt;/h3&gt;
+&lt;p&gt;Markdown treats asterisks (&lt;code class=&quot;language-text&quot;&gt;*&lt;/code&gt;) and underscores (&lt;code class=&quot;language-text&quot;&gt;_&lt;/code&gt;) as indicators of
+emphasis. Text wrapped with one &lt;code class=&quot;language-text&quot;&gt;*&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;_&lt;/code&gt; will be wrapped with an
+HTML &lt;code class=&quot;language-text&quot;&gt;&amp;lt;em&amp;gt;&lt;/code&gt; tag; double &lt;code class=&quot;language-text&quot;&gt;*&lt;/code&gt;’s or &lt;code class=&quot;language-text&quot;&gt;_&lt;/code&gt;’s will be wrapped with an HTML
+&lt;code class=&quot;language-text&quot;&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tag. E.g., this input:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;single asterisks&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;single underscores&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;double asterisks&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;double underscores&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;images&quot;&gt;&lt;a href=&quot;#images&quot; aria-label=&quot;images permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Images&lt;/h3&gt;
+&lt;p&gt;You might have images that are embedded:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/gatsby-icon.png&quot; alt=&quot;Gatsby&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; aria-label=&quot;code permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Code&lt;/h3&gt;
+&lt;p&gt;To indicate a span of code, wrap it with backtick quotes (&lt;code class=&quot;language-text&quot;&gt;`&lt;/code&gt;).
+Unlike a pre-formatted code block, a code span indicates code within a
+normal paragraph. For example:&lt;/p&gt;
+&lt;p&gt;Use the &lt;code class=&quot;language-text&quot;&gt;printf()&lt;/code&gt; function.&lt;/p&gt;
+&lt;p&gt;Code can also be syntax highlighted:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// This is an example interpolation&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; example &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
